@@ -99,6 +99,12 @@ website:
             url: 'bouquets?theme=Administrations&subtheme=Particuliers'
             class: 'fr-btn fr-btn--icon-left fr-btn--lg fr-icon-checkbox-circle-fill'
       - title:
+        content:
+        sub_section_datasets:
+          title: 'Jeux de données'
+          datasets:
+            - '5b7ffc618b4c4169d30727e0'
+      - title:
         content: >-
           ### 💼 des entreprises
 

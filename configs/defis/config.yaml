@@ -45,52 +45,52 @@ website:
             - id: '65b76f15d7874915c8e41298'
               name: 'Impact Diagnostics de Performance Energétique'
               description: 'Quel impact de la classe DPE sur les consommations énergétiques ? Défi porté par Enedis'
-              url: 'topics?topic=65b76f15d7874915c8e41298'
+              url: 'defis/65b76f15d7874915c8e41298/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_enedis4.png'
             - id: '65b10aa72d0c187ecf296930'
               name: 'Offre culturelle'
               description: "Comment valoriser l'offre culturelle et favoriser l'accès à la culture ?"
-              url: 'topics?topic=65b10aa72d0c187ecf296930'
+              url: 'defis/65b10aa72d0c187ecf296930/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_culture3.png'
             - id: '65b22219ffcf892bd066df76'
               name: 'Elections'
               description: 'Quels liens entre vote et caractéristiques socio-démographiques ?'
-              url: 'topics?topic=65b22219ffcf892bd066df76'
+              url: 'defis/65b22219ffcf892bd066df76/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_elections3.png'
             - id: '65b10beae24f409e31c547a5'
               name: 'Changement climatique'
               description: 'Quelle évolution du climat en France depuis le début du XXe siècle ?'
-              url: 'topics?topic=65b10beae24f409e31c547a5'
+              url: 'defis/65b10beae24f409e31c547a5/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_climat3.png'
             - id: '65b76b8536f029909a82ca1c'
               name: 'Commerces de centre-ville'
               description: 'Quelle est la structure du tissu commercial ?'
-              url: 'topics?topic=65b76b8536f029909a82ca1c'
+              url: 'defis/65b76b8536f029909a82ca1c/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_commerces3.png'
             - id: '65a92352ddd3d98e460e83f3'
               name: 'Infrastructures cyclables'
               description: 'Quels liens entre accidentologie à vélo et infrastructures cyclables ?'
-              url: 'topics?topic=65a92352ddd3d98e460e83f3'
+              url: 'defis/65a92352ddd3d98e460e83f3/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_velo3.png'
             - id: '65a92372953d21f206abb110'
               name: 'Energie en France'
               description: 'Quelles tensions énergétiques passées et futures en France ?'
-              url: 'topics?topic=65a92372953d21f206abb110'
+              url: 'defis/65a92372953d21f206abb110/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/energie3_odu.png'
             - id: '65a9237ed493a309fc872e4a'
               name: 'Carte scolaire'
               description: 'Comment permettre de savoir dans quel établissement inscrire un enfant ?'
-              url: 'topics?topic=65a9237ed493a309fc872e4a'
+              url: 'defis/65a9237ed493a309fc872e4a/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_ecole4.png'
             - id: '65a923a083cf5f728c9934b3'
               name: 'Véhicules électriques'
               description: 'La répartition des infrastructures de recharge est-elle adaptée ?'
-              url: 'topics?topic=65a923a083cf5f728c9934b3'
+              url: 'defis/65a923a083cf5f728c9934b3/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_voiture3.png'
             - id: '65a9238c202514467c0163d2'
               name: 'Plan France Relance'
               description: "Quels impacts des aides distribués sur l'économie et la transition écologique ?"
-              url: 'topics?topic=65a9238c202514467c0163d2'
+              url: 'defis/65a9238c202514467c0163d2/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_francerelance3.png'
       - title:
         content: >-
@@ -116,14 +116,9 @@ website:
     name:
     link:
   router_items:
-    - name: 'Accueil'
+    - name: 'Défis'
       id: 'home'
       linkPage: '/'
-      type: 'component'
-      display_menu: false
-    - name: 'Défis'
-      id: 'topics'
-      linkPage: '/topics'
       type: 'component'
       display_menu: true
     - name: 'Open Data University'
@@ -149,6 +144,11 @@ website:
       type: 'external'
       display_menu: true
       url: 'https://guides.data.gouv.fr/'
+    - name: 'Défis'
+      id: 'bouquets'
+      linkPage: '/defis'
+      type: 'component'
+      display_menu: false
   # img should be square
   home_buttons:
   show_topic_charts: true
@@ -226,3 +226,13 @@ website:
 # to find an id go to https://www.data.gouv.fr/fr/organizations/ministere-de-la-transition-ecologique/
 # then Informations > ID at the bottom of the page
 organizations:
+bouquets:
+  steps:
+  type: 'data.gouv.fr' #data.gouv.fr or custom
+  display_author: false
+  theme:
+    name: Type d'organisation
+    placeholder: Choisir un type d'organisation
+  subtheme:
+    name: Usagers
+    placeholder: Choisir un type d'usager

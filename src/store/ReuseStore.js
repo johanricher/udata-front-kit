@@ -6,7 +6,8 @@ const reusesAPI = new ReusesAPI()
 
 export const useReuseStore = defineStore('reuse', {
   state: () => ({
-    data: {}
+    data: {},
+    reuseFromSpecificTopic: []
   }),
   actions: {
     /**
@@ -45,6 +46,26 @@ export const useReuseStore = defineStore('reuse', {
 
     async getTypes() {
       return await reusesAPI.get('types')
+    },
+
+    /**
+     * Fetch datasets by url and store them in an array.
+     * @param {string[]} datasetIds - The list of dataset IDs to fetch.
+     */
+    async loadReusesByUrl(url) {
+      let fetchedReuses = []
+      try {
+        const response = await fetch(url)
+        const data = await response.json()
+        fetchedReuses = data.data
+        console.log('ijiji')
+      } catch (error) {
+        console.error(`Error fetching url ${url}:`, error)
+      }
+      console.log('toto')
+      console.log(fetchedReuses)
+      this.reuseFromSpecificTopic = fetchedReuses
+      return fetchedReuses
     }
   }
 })
