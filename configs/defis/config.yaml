@@ -92,6 +92,26 @@ website:
               description: "Quels impacts des aides distribués sur l'économie et la transition écologique ?"
               url: 'defis/65a9238c202514467c0163d2/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/odu_francerelance3.png'
+            - id: '6639df879e70e0b00e5aeef1'
+              name: 'Accès et exploitation des données météorologiques'
+              description: "Comment faciliter l'accès aux données météorologiques ?"
+              url: 'defis/6639df879e70e0b00e5aeef1/'
+              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/acces-meteo.jpg'
+            - id: '6639e311f4a75be320cfa517'
+              name: 'Energies renouvelables'
+              description: "Comment prévoir les variations de production d'énergies renouvelables ?"
+              url: 'defis/6639e311f4a75be320cfa517/'
+              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/energies-renouvelables.jpg'
+            - id: '6639e67fa95c6e4f1da70e39'
+              name: 'Décision agricole'
+              description: 'Comment mobiliser les données météorologiques pour la prise de décision agricole ?'
+              url: 'defis/6639e67fa95c6e4f1da70e39/'
+              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/decision-agricole.jpg'
+            - id: '6639ea1a5fde712a09fa0c67'
+              name: 'Îlot de chaleur urbain'
+              description: 'Quelle cartographie des îlots de chaleur urbain ?'
+              url: 'defis/6639ea1a5fde712a09fa0c67/'
+              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/ilot-de-chaleur.jpg'
       - title:
         content: >-
           ### L'Open Data University
@@ -175,6 +195,14 @@ website:
       name: 'Véhicules électriques'
     - id: '65a9238c202514467c0163d2'
       name: 'Plan France Relance'
+    - id: '6639df879e70e0b00e5aeef1'
+      name: 'Accès et exploitation des données météorologiques'
+    - id: '6639e311f4a75be320cfa517'
+      name: 'Energies renouvelables'
+    - id: '6639e67fa95c6e4f1da70e39'
+      name: 'Décision agricole'
+    - id: '6639ea1a5fde712a09fa0c67'
+      name: 'Îlot de chaleur urbain'
   url_highlighted_topics: 'topics'
   type_highlighted_topics: 'card'
   oauth_option: false
