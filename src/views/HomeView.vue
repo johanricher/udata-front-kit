@@ -149,6 +149,11 @@ const goToPage = (page) => {
   line-height: 50px;
   font-weight: 800;
 }
+
+.hero-text {
+  margin-top: 30px;
+  text-align: left;
+}
 .subtitle {
   text-align: left;
   font-style: italic;

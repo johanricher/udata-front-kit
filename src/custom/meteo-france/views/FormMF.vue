@@ -115,6 +115,11 @@ const onSelectDataset = (dataset: string) => {
           selectedDep.value = 'No'
         } else if (selectedDataset.value?.indicateur) {
           showIndicateur.value = true
+        } else if (selectedDataset.value?.periode) {
+          showPeriod.value = true
+          optionsPeriod.value = datasetResources.value
+            .filter((item) => item.type == 'main')
+            .map((a) => a.title.split('_').pop() ?? a.title)
         } else {
           filteredResources.value = datasetResources.value.map((a) => a.title)
         }
@@ -137,17 +142,23 @@ function onSelectDep(event: Event) {
 
 function onSelectPeriod(event: Event) {
   selectedPeriod.value = (event.target as HTMLSelectElement).value
-  if (!selectedDataset.value?.id.startsWith('SIM')) {
-    let res = datasetResources.value.map((a) => a.title)
-    res = res.filter((r) => r.includes('departement_' + selectedDep.value))
-    filteredResources.value = res.filter((r) =>
-      r.includes('periode_' + selectedPeriod.value)
-    )
-  } else {
+  if (selectedDataset.value?.id.startsWith('SIM')) {
     const res = datasetResources.value.map((a) => a.title)
     filteredResources.value = res.filter(
       (r) => selectedPeriod.value && r.includes(selectedPeriod.value)
     )
+  } else {
+    if (selectedDataset.value?.departement) {
+      let res = datasetResources.value.map((a) => a.title)
+      res = res.filter((r) => r.includes('departement_' + selectedDep.value))
+      filteredResources.value = res.filter((r) =>
+        r.includes('periode_' + selectedPeriod.value)
+      )
+    } else {
+      filteredResources.value = datasetResources.value
+        .map((a) => a.title)
+        .filter((r) => r.includes(selectedPeriod.value ?? ''))
+    }
   }
 }
 
@@ -197,7 +208,7 @@ function onSelectIndicateur(event: Event) {
       </select>
     </div>
 
-    <div v-if="selectedDep && showPeriod" class="select-classic">
+    <div v-if="(!showDep || selectedDep) && showPeriod" class="select-classic">
       <label>Quelle période ?</label>
       <select class="fr-select" @change="onSelectPeriod($event)">
         <option hidden>Choisir une option</option>
