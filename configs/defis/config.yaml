@@ -112,6 +112,21 @@ website:
               description: 'Quelle cartographie des îlots de chaleur urbain ?'
               url: 'defis/6639ea1a5fde712a09fa0c67/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/ilot-de-chaleur.jpg'
+            - id: '66a0fdf41a40f23f40025444'
+              name: 'Accès au sport'
+              description: "Sport pour tous : Évaluer et améliorer l'égalité d'accès aux activités sportives en France"
+              url: 'defis/66a0fdf41a40f23f40025444/'
+              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/defi-acces-au-sport.jpg'
+            - id: '66a0ffa8d8f03afc1d474a53'
+              name: 'JOP2024 et offre culturelle'
+              description: "Jeux Olympiques et Paralympiques : Enrichissez l'expérience et mettez en valeur l'offre culturelle"
+              url: 'defis/66a0ffa8d8f03afc1d474a53/'
+              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/defi-jo-offre-culturelle.jpg'
+            - id: '66a10128a66990ed3d718a53'
+              name: 'JOP2024 et qualité de l’air'
+              description: "Jeux Olympiques et Paralympiques : enjeux de pollution de l'air dans le cadre d'une activité physique"
+              url: 'defis/66a10128a66990ed3d718a53/'
+              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/defi-jo-qualite-de-l%27air.jpg'
       - title:
         content: >-
           ### L'Open Data University
@@ -203,6 +218,13 @@ website:
       name: 'Décision agricole'
     - id: '6639ea1a5fde712a09fa0c67'
       name: 'Îlot de chaleur urbain'
+    - id: '66a0fdf41a40f23f40025444'
+      name: 'Accès au sport'
+    - id: '66a0ffa8d8f03afc1d474a53'
+      name: 'JOP2024 et offre culturelle'
+    - id: '66a10128a66990ed3d718a53'
+      name: 'JOP2024 et qualité de l’air'
+
   url_highlighted_topics: 'topics'
   type_highlighted_topics: 'card'
   oauth_option: false
