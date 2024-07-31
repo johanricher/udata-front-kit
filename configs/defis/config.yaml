@@ -122,11 +122,6 @@ website:
               description: "Jeux Olympiques et Paralympiques : Enrichissez l'expérience et mettez en valeur l'offre culturelle"
               url: 'defis/66a0ffa8d8f03afc1d474a53/'
               image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/defi-jo-offre-culturelle.jpg'
-            - id: '66a10128a66990ed3d718a53'
-              name: 'JOP2024 et qualité de l’air'
-              description: "Jeux Olympiques et Paralympiques : enjeux de pollution de l'air dans le cadre d'une activité physique"
-              url: 'defis/66a10128a66990ed3d718a53/'
-              image_url: 'https://raw.githubusercontent.com/thanhhale7/images/main/defi-jo-qualite-de-l%27air.jpg'
       - title:
         content: >-
           ### L'Open Data University
@@ -222,8 +217,6 @@ website:
       name: 'Accès au sport'
     - id: '66a0ffa8d8f03afc1d474a53'
       name: 'JOP2024 et offre culturelle'
-    - id: '66a10128a66990ed3d718a53'
-      name: 'JOP2024 et qualité de l’air'
 
   url_highlighted_topics: 'topics'
   type_highlighted_topics: 'card'
